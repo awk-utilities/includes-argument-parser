@@ -38,10 +38,10 @@ install:
   - sudo make install
 
 before_script:
-  - argument-parser.awk --lint
+  - ./argument-parser.awk --lint
 
 script:
-  - ./.travis-ci/tests.sh
+  - .travis-ci/tests.sh
 
 after_failure:
   - printf 'after_failure asks -> Where did %s go wrong?\n' "${USER}"
