@@ -31,9 +31,8 @@ branches:
 #
 # Do the things
 #
-## Install and setup servers this project makes use of
 before_install:
-  - sudo apt-get install -yqq gawk
+  - sudo apt-get install -yqq gawk make
 
 install:
   - sudo make install
